@@ -30,15 +30,12 @@ router.post('/', async (req, res) => {
 //@access  Public
 router.get('/', async (req, res) => {
   try {
-
-    const contact = await Contact.find().sort({ date: -1 })
-    res.json(contact)
-
+    const contact = await Contact.find().sort({ date: -1 });
+    res.json(contact);
   } catch (err) {
     console.error(err.message);
     res.status(500).send('Server error');
   }
-  res.send('Contact Route')
 });
 
 module.exports = router;
