@@ -1,5 +1,6 @@
 const express = require('express');
 const connectDB = require('./config/db');
+const path = require('path')
 
 const app = express();
 
@@ -7,9 +8,14 @@ const app = express();
 connectDB();
 
 //Middleware
+app.use(express.json())
 app.use(express.json({ extended: false }));
+app.use(express.urlencoded({ extended: true })) //true??
 
-app.get('/', (req, res) => res.send('API Running'));
+
+app.use(express.static(path.join(__dirname, 'public')))
+
+// app.get('/', (req, res) => res.send('API Running'));
 
 //Define Routes
 app.use('/api/contact', require('./routes/api/contact'));
