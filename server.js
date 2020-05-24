@@ -15,8 +15,6 @@ app.use(express.urlencoded({ extended: true })) //true??
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-// app.get('/', (req, res) => res.send('API Running'));
-
 //Define Routes
 app.use('/api/contact', require('./routes/api/contact'));
 
