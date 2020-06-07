@@ -2,7 +2,7 @@
 
 ![Project Image](https://guidoasbun.s3.amazonaws.com/portfolio-image.png)
 
-> ![GitHub repo size](https://img.shields.io/github/repo-size/guidoasbun/portfolio) ![GitHub](https://img.shields.io/github/license/guidoasbun/profile)
+> ![GitHub repo size](https://img.shields.io/github/repo-size/guidoasbun/portfolio) ![GitHub](https://img.shields.io/github/license/guidoasbun/portfolio)
  ![GitHub last commit](https://img.shields.io/github/last-commit/guidoasbun/Profile)
 ---
 
